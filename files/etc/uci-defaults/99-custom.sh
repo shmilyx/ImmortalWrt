@@ -69,8 +69,8 @@ elif [ "$count" -ge 2 ]; then
         uci set network.lan.ipaddr="$CUSTOM_IP"
         echo "custom router ip is $CUSTOM_IP" >>$LOGFILE
     else
-        uci set network.lan.ipaddr='192.168.100.1'
-        echo "default router ip is 192.168.100.1" >>$LOGFILE
+        uci set network.lan.ipaddr='192.168.2.2'
+        echo "default router ip is 192.168.2.2" >>$LOGFILE
     fi
     # 设置 WAN 接口基础配置
     uci set network.wan=interface
